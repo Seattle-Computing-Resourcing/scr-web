@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from '.././components/navbar/navbar'
+import Navbar from '.././components/navbar/Navbar.jsx'
 
 const Contact = () => {
     const currentTheme = localStorage.getItem("currentTheme");
