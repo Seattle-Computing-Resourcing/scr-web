@@ -9,9 +9,11 @@
   width: 100vw;
   min-height: 100vh;
   background: black;
+  color: white;
   transition: 0.5s;
 }
 
 .container.dark {
   background: white;
+  color: black;
 }

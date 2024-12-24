@@ -5,7 +5,11 @@ const Contact = () => {
     const currentTheme = localStorage.getItem("currentTheme");
 
     const [theme, setTheme] = useState(currentTheme ? currentTheme : "light");
-  
+
+    useEffect(() => {
+      document.title = "SCR | Contact";
+    }, [])
+
     useEffect(() => {
       localStorage.setItem("currentTheme", theme);
     }, [theme])

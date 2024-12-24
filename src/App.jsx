@@ -6,6 +6,10 @@ const App = () => {
   const [theme, setTheme] = useState(currentTheme ? currentTheme : "light");
 
   useEffect(() => {
+    document.title = "SCR | Home";
+  }, [])
+
+  useEffect(() => {
     localStorage.setItem("currentTheme", theme);
   }, [theme])
 

@@ -5,7 +5,11 @@ const Exercises = () => {
     const currentTheme = localStorage.getItem("currentTheme");
 
     const [theme, setTheme] = useState(currentTheme ? currentTheme : "light");
-  
+
+    useEffect(() => {
+      document.title = "SCR | Exercises";
+    }, [])
+
     useEffect(() => {
       localStorage.setItem("currentTheme", theme);
     }, [theme])
