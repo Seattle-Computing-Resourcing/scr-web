@@ -14,9 +14,11 @@ export default function Page({children, meta}) {
 
   return (
     <div>
+      <div className = {`container ${theme}`}>
         <Navbar theme={theme} setTheme={setTheme}/>
         <div>{meta.author} <br></br> {meta.title} <br></br> {meta.date}</div>
         <MDXProvider>{children}</MDXProvider>
+      </div>
     </div>
   )
 }
