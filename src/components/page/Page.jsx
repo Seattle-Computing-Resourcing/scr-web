@@ -20,8 +20,10 @@ export default function Page({children, meta}) {
     <div>
       <div className={`container ${theme}`}>
         <Navbar theme={theme} setTheme={setTheme} />
-        <div>
-          {meta.author} <br></br> {meta.title} <br></br> {meta.date}
+        <div classname="metadata">
+          <div className="metatitle">{meta.title}</div>
+          <div className="metaauthor">Authors: {meta.author}</div>
+          <div className="metadata">Last updated: {meta.date}</div>
         </div>
         <MDXProvider>{children}</MDXProvider>
       </div>
