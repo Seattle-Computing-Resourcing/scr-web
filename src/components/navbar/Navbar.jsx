@@ -39,6 +39,7 @@ const navbar = ({theme, setTheme}) => {
                     <li><NavLink to='/' style = {{color: textColor, textDecoration: 'none'}}>Home</NavLink></li>
                     <li><NavLink to='/learning' style = {{color: textColor, textDecoration: 'none'}}>Learning</NavLink></li>
                     <li><NavLink to='/exercises' style = {{color: textColor, textDecoration: 'none'}}>Exercises</NavLink></li>
+                    <li><NavLink to='/contests' style = {{color: textColor, textDecoration: 'none'}}>Contests</NavLink></li>
                     <li><NavLink to='/contact' style = {{color: textColor, textDecoration: 'none'}}>Contact</NavLink></li>
                 </ul>
 
