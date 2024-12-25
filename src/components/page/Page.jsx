@@ -4,21 +4,23 @@ import Navbar from '../navbar/Navbar'
 import './Page.css'
 
 export default function Page({children, meta}) {
-    const currentTheme = localStorage.getItem("currentTheme");
-    
-    const [theme, setTheme] = useState(currentTheme ? currentTheme : "light");
+  const currentTheme = localStorage.getItem("currentTheme");
 
-    useEffect(() => {
-        localStorage.setItem("currentTheme", theme);
-    }, [theme])
+  const [theme, setTheme] = useState(currentTheme ? currentTheme : "light");
+
+  useEffect(() => {
+    localStorage.setItem("currentTheme", theme);
+  }, [theme]);
 
   return (
     <div>
-      <div className = {`container ${theme}`}>
-        <Navbar theme={theme} setTheme={setTheme}/>
-        <div>{meta.author} <br></br> {meta.title} <br></br> {meta.date}</div>
+      <div className={`container ${theme}`}>
+        <Navbar theme={theme} setTheme={setTheme} />
+        <div>
+          {meta.author} <br></br> {meta.title} <br></br> {meta.date}
+        </div>
         <MDXProvider>{children}</MDXProvider>
       </div>
     </div>
-  )
+  );
 }

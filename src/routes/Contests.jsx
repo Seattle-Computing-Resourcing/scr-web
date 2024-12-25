@@ -22,4 +22,4 @@ const Contests = () => {
     )
 }
 
-export default Contests
+export default Contests;

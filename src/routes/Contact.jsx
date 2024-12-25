@@ -54,28 +54,46 @@ const Contact = () => {
   }, [theme])
   
   return (
-    <div className = {`container ${theme}`}>
-      <Navbar theme={theme} setTheme={setTheme}/>
+    <div className={`container ${theme}`}>
+      <Navbar theme={theme} setTheme={setTheme} />
       <section className="contact">
         <form onSubmit={onSubmit}>
           <h2>Contact us!</h2>
           <div className="input-box">
             <label>Name</label>
-            <input type="text" className="field" placeholder='Enter your name' name='name' required />
+            <input
+              type="text"
+              className="field"
+              placeholder="Enter your name"
+              name="name"
+              required
+            />
           </div>
           <div className="input-box">
             <label>Email</label>
-            <input type="text" className="field" placeholder='Enter your email' name='email' required />
+            <input
+              type="text"
+              className="field"
+              placeholder="Enter your email"
+              name="email"
+              required
+            />
           </div>
           <div className="input-box">
             <label>Message</label>
-            <textarea type="text" className="field message" placeholder='Enter your message' name='message' required />
+            <textarea
+              type="text"
+              className="field message"
+              placeholder="Enter your message"
+              name="message"
+              required
+            />
           </div>
           <button type="submit">Send Message</button>
         </form>
       </section>
     </div>
-  )
+  );
 }
 
 export default Contact

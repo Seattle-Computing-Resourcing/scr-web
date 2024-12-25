@@ -8,18 +8,18 @@ const App = () => {
 
   useEffect(() => {
     document.title = "SCR | Home";
-  }, [])
+  }, []);
 
   useEffect(() => {
     localStorage.setItem("currentTheme", theme);
-  }, [theme])
+  }, [theme]);
 
   return (
-    <div className = {`container ${theme}`}>
-      <Navbar theme={theme} setTheme={setTheme}/>
+    <div className={`container ${theme}`}>
+      <Navbar theme={theme} setTheme={setTheme} />
       <Homepage />
     </div>
-  )
+  );
 }
 
 export default App

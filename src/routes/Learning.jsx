@@ -17,15 +17,17 @@ const Learning = () => {
     }, [theme])
   
     return (
-      <div className = {`container ${theme}`}>
-        <Navbar theme={theme} setTheme={setTheme}/>
+      <div className={`container ${theme}`}>
+        <Navbar theme={theme} setTheme={setTheme} />
 
-        <div className='learning-hero'>
+        <div className="learning-hero">
           <h1>Seattle Computing Resourcing</h1>
-          <Button buttonStyle='btn--outline' buttonSize='btn--large'>Start Learning</Button>
+          <Button buttonStyle="btn--outline" buttonSize="btn--large">
+            Start Learning
+          </Button>
         </div>
       </div>
-    )
+    );
 }
 
 export default Learning

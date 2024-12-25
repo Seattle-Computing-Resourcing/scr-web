@@ -16,10 +16,10 @@ const Exercises = () => {
     }, [theme])
   
     return (
-      <div className = {`container ${theme}`}>
-        <Navbar theme={theme} setTheme={setTheme}/>
+      <div className={`container ${theme}`}>
+        <Navbar theme={theme} setTheme={setTheme} />
       </div>
-    )
+    );
 }
 
 export default Exercises
