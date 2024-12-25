@@ -1,0 +1,22 @@
+.learning-hero {
+    background-color: white;
+    color: black;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain;
+    transition: 0.5s;
+}
+
+.dark .learning-hero {
+    background-color: black;
+    color: white;
+}
+
+.learning-hero > h1 {
+    font-size: 50px;
+    margin-top: 30vh;
+    transition: 0.5s;
+}
