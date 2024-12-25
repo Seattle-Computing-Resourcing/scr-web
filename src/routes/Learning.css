@@ -20,3 +20,15 @@
     margin-top: 30vh;
     transition: 0.5s;
 }
+
+.learning-btn {
+    margin-top: 10vh;
+}
+
+.learn-blue {
+    color: blue;
+}
+
+.dark .learn-blue {
+    color: skyblue;
+}
