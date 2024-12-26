@@ -1,0 +1,32 @@
+.markdown-content {
+    height: 100%;
+    display: block;
+}
+
+.metatitle {
+    font-weight: bold;
+    font-size: 100px;
+}
+
+.sidebar {
+    float: left;
+    background: rgb(235, 230, 230);
+    width: 15vw;
+    height: auto;
+    transition: 0.5s;
+    text-align: center;
+    display: grid;
+    overflow-y: hidden;
+}
+
+.dark .sidebar {
+    background: rgb(42, 37, 37);
+}
+
+#sidebar-active {
+    display: none;
+}
+
+.side-ul li {
+    padding: 20px 10px;
+}

@@ -10,7 +10,6 @@ import menu_light from '../../assets/menu_light.png'
 import menu from '../../assets/menu.png'
 import logo_white_mobile from '../../assets/logo_white_mobile.png'
 import logo_mobile from '../../assets/logo_mobile.png'
-
 import { NavLink } from 'react-router-dom'
 
 const navbar = ({theme, setTheme}) => {
@@ -22,6 +21,7 @@ const navbar = ({theme, setTheme}) => {
 
     const toggle_mode = () => {
         theme == "light" ? setTheme ("dark") : setTheme("light");
+        localStorage.setItem("currentTheme", theme);
     }
 
     var textColor = theme == "light" ? 'black' : 'white';
@@ -29,13 +29,13 @@ const navbar = ({theme, setTheme}) => {
     return (
         <div>
             <div className = "navbar">
-                <input type="checkbox" id="sidebar-active" checked = {menuClicked}></input>
-                <label onClick={()=>handleClick()} id="overlay" for="sidebar-active"></label>
+                <input type="checkbox" id="navbar-active" checked = {menuClicked}></input>
+                <label onClick={()=>handleClick()} id="overlay" for="navbar-active"></label>
 
                 <NavLink to='/'><img src = {theme == "light" ? logo_mobile : logo_white_mobile} alt = "" className = "logo_mobile"></img></NavLink>
                 {/* <NavLink to='/'><img src = {theme == "light" ? logo : logo_white} alt = "" className = "logo"></img></NavLink> */}
 
-                <ul>
+                <ul class="nav-ul">
                     <li><NavLink to='/' style = {{color: textColor, textDecoration: 'none'}}>Home</NavLink></li>
                     <li><NavLink to='/learning' style = {{color: textColor, textDecoration: 'none'}}>Learning</NavLink></li>
                     <li><NavLink to='/exercises' style = {{color: textColor, textDecoration: 'none'}}>Exercises</NavLink></li>
