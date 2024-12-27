@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "docs:dev": "vitepress dev src/content",
+    "docs:build": "vitepress build src/content",
+    "docs:preview": "vitepress preview src/content"
   },
   "dependencies": {
     "@mdx-js/react": "^3.1.0",
