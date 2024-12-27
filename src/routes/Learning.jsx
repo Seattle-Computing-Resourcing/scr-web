@@ -23,7 +23,7 @@ const Learning = () => {
         <div className="learning-hero">
           <h1>Learning Resources for <span class="learn-blue">C++ and Python</span></h1>
           <div className="learning-btn">
-            <Button buttonStyle="btn--outline" buttonSize="btn--large" linkTo='/learning/test'>
+            <Button buttonStyle="btn--outline" buttonSize="btn--large" linkTo='https://learningseattlecr.vercel.app/'>
               Start Learning
             </Button>
           </div>

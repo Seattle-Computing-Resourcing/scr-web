@@ -11,7 +11,11 @@ const Contact = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "b41330fc-1f1c-4baf-a03a-fdd3068d3c10");
+    const access_key = import.meta.env.VITE_ACCESS_KEY;
+
+    console.log(access_key);
+
+    formData.append("access_key", access_key);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -35,7 +39,7 @@ const Contact = () => {
 
       Swal.fire({
         title: "Error!",
-        text: "Something went wrong when sending the message. Try again!",
+        text: "Something went wrong. If this issue persists, email us at seattlecomputingresourcing@gmail.com",
         icon: "error"
       });
     }

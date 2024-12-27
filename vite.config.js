@@ -5,4 +5,5 @@ import mdx from "@mdx-js/rollup"
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), mdx()],
+  define: {'process.env' : process.env }
 })
