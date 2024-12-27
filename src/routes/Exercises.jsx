@@ -24,7 +24,7 @@ const Exercises = () => {
           <h1>Exercises for <span class="learn-blue">C++, Python, and Java</span></h1>
           <div className="learning-btn">
             <Button buttonStyle="btn--outline" buttonSize="btn--large" linkTo='https://learningseattlecr.vercel.app/'>
-              View Exercises
+              Solve Exercises
             </Button>
           </div>
         </div>
