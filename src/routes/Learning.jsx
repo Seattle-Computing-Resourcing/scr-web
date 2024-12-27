@@ -21,7 +21,7 @@ const Learning = () => {
         <Navbar theme={theme} setTheme={setTheme} />
 
         <div className="learning-hero">
-          <h1>Learning Resources for <span class="learn-blue">C++ and Python</span></h1>
+          <h1>Learning Resources for <span class="learn-blue">C++, Python, and Java</span></h1>
           <div className="learning-btn">
             <Button buttonStyle="btn--outline" buttonSize="btn--large" linkTo='https://learningseattlecr.vercel.app/'>
               Start Learning
