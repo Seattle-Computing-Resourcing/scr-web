@@ -7,6 +7,19 @@ import close_sidebar_light from '../../assets/arrow_close_menu_light.png'
 import sidebar from '../../assets/arrow_open_menu.png'
 import sidebar_light from '../../assets/arrow_open_menu_light.png'
 import { NavLink } from 'react-router-dom';
+import { CodeBlock } from 'react-code-block';
+
+function MyCodeBlock({ children, className }) {
+  return (
+    <CodeBlock code={children} language="js">
+      <CodeBlock.Code className="bg-gray-900 p-6 rounded-xl shadow-lg">
+        <CodeBlock.LineContent>
+          <CodeBlock.Token />
+        </CodeBlock.LineContent>
+      </CodeBlock.Code>
+    </CodeBlock>
+  );
+}
 
 export default function Page({children, meta}) {
   const [sidebarClicked, setSidebarClicked] = useState(false); 
@@ -41,63 +54,16 @@ export default function Page({children, meta}) {
             <ul class="side-ul">
               <li><NavLink to='/learning/test' style = {{color: textColor, textDecoration: 'none'}}>Test</NavLink></li>
               <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test' style = {{color: textColor, textDecoration: 'none'}}>Test</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-              <li><NavLink to='/learning/test2' style = {{color: textColor, textDecoration: 'none'}}>Test2</NavLink></li>
-
             </ul>
           </div>
 
           <div className="markdown-content">        
             <div className="metadata">
               <div className="metatitle">{meta.title}</div>
-              <div className="metaauthor">Authors: {meta.author}</div>
+              <div className="metadesc">{meta.description}</div>
             </div>
 
-            <div className="pagecontent"><MDXProvider>{children}</MDXProvider></div>
+            <div className="pagecontent"><MDXProvider components={{pre: MyCodeBlock, }}>{children}</MDXProvider></div>
           </div>
         </div>
       </div>

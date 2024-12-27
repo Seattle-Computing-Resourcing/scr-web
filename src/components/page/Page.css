@@ -1,22 +1,40 @@
+.content-container {
+    overflow-y: hidden;
+}
+
 .markdown-content {
-    height: 100%;
+    height: 100vh;
     display: block;
+    overflow: auto;
+    overflow-x: hidden;
+    width: 85.5vw;
+    padding-left: 5px;
+}
+
+.pagecontent {
+    line-height: 2;
 }
 
 .metatitle {
     font-weight: bold;
     font-size: 100px;
+    text-align: center;
+}
+
+.metadesc {
+    text-align: center;
+    font-size: 20px;
 }
 
 .sidebar {
     float: left;
     background: rgb(235, 230, 230);
-    width: 15vw;
-    height: auto;
+    width: 14vw;
+    height: 100vh;
     transition: 0.5s;
     text-align: center;
     display: grid;
-    overflow-y: hidden;
+    transition: 0.5s;
 }
 
 .dark .sidebar {
@@ -27,6 +45,43 @@
     display: none;
 }
 
+.side-ul {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 .side-ul li {
     padding: 20px 10px;
+}
+
+::-webkit-scrollbar {
+    width: 0.5vw;
+}
+  
+::-webkit-scrollbar-track {
+    background: rgb(195, 190, 190);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(147, 123, 123);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(58, 58, 58);
+}
+
+.dark ::-webkit-scrollbar-track {
+    background: rgb(102, 86, 86);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: rgb(179, 175, 175);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: rgb(50, 48, 48);
+}
+
+.bg-gray-900 {
+    background-color: gray;
 }

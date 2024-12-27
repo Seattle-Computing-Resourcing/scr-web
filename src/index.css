@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+  overflow-x: hidden;
 }
 
 .container {
@@ -14,6 +15,6 @@
 }
 
 .container.dark {
-  background: black;
+  background: rgb(27, 27, 27);
   color: white;
 }
