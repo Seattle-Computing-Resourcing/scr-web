@@ -13,7 +13,7 @@ const Contact = () => {
 
     const access_key = import.meta.env.VITE_ACCESS_KEY;
 
-    console.log(access_key);
+    // console.log(access_key);
 
     formData.append("access_key", access_key);
 
